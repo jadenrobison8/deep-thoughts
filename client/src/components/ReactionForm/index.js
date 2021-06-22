@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 
+import { useMutation } from '@apollo/react-hooks';
+import { ADD_REACTION } from '../../utils/mutations';
+
 const ReactionForm = ({ thoughtId }) => {
    const [reactionBody, setBody] = useState('');
    const [characterCount, setCharacterCount] = useState(0);
